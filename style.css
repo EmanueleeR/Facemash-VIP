@@ -1,0 +1,121 @@
+*{
+    /*CSS RESET*/
+    /*CONFIGURAZIONE DI DEFAULT
+    Per azzerare lo stile di default dei <tag> dato dai broswer
+    ES: <p> <h1> <div> ecc. hanno del margin e padding di default diverso da 0*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    box-sizing: border-box;
+    /*width: 1245px; meglio settare con percentuali al larghezza*/
+    width: 100%; /*largo come tutta la pagina*/
+    height: 560px;
+    border: solid darkred;
+}
+
+.box-inner-title{
+    box-sizing: border-box; 
+    background-color: darkred;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    
+    /*FLEX PER CENTRARE TITOLO NEL BOX DEL TITOLO STESSO*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-above-images{
+    box-sizing: border-box; 
+    background-color: white;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    
+    /*FLEX PER CENTRARE TITOLO NEL BOX DEL TITOLO STESSO*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title{
+    color: white;
+}
+
+.text{
+    color: black;
+}
+
+.img{
+    height: 300px;
+     /*max-height: 100%; meglio usare il massimo dell'altezza rispetto ai pixel*/
+    width: auto;
+}
+
+.box-inner-images{
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    box-sizing: border-box; 
+    width: 100%;
+    height: 54%;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+
+
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box; 
+
+}
+
+.img-block{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+
+/*RENDO INVISIBILI INIZIALMENTE LE IMMAGINI DEI VIP*/
+#img1-block{
+    display: none;
+}
+#testotraimmagini{
+    display: none;
+}
+#img2-block{
+    display: none;
+}
+/*
+body{
+    border: solid darkblue;
+
+}
+
+
+html{
+    border: solid aquamarine;
+}
+*/
